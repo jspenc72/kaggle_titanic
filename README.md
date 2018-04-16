@@ -1,4 +1,4 @@
-# kaggle_titanic
+## kaggle_titanic.ipynb
 One of the more basic, open-ended competitions on kaggle. See here for details : https://www.kaggle.com/c/titanic
 
 ## Sites which helped most:
@@ -29,3 +29,11 @@ One of the more basic, open-ended competitions on kaggle. See here for details :
 * Age : I tried multiple ways to make this work, I never saw an increase in accuracy.
 * Removing outliers : mostly looking for items over 3 STD's, maybe could have tried something more involved.
 * Rarity of prefix : percent with this prefix.
+
+
+
+#kaggle_titanic_nn.ipynb
+  
+This approach starts mostly the same features and uses a homemade neural net as the classifier.  The nn was built from the book 'Make your own Neural Net' (https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork) and I added CV, param grid and some helper functions.  One of the params is the activation function itself but the scaler and internal code (backprop for instance) might need to change to handle activations other than expit.
+
+Current notebook as-is should produce and LB score of 79.45, not better than scikit-learn ensembling approach but it was a worthwhile exercise to learn the basics of neural nets.
