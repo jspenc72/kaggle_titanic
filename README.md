@@ -38,3 +38,8 @@ One of the more basic, open-ended competitions on kaggle. See here for details :
 This approach starts mostly the same features and uses a homemade neural net as the classifier.  The nn was built from the book 'Make your own Neural Net' (https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork) and I added CV, param grid, metric function to tune toward and some helper functions.  One of the params is the activation function itself but the scaler and internal code (backprop for instance) might need to change to handle activations other than expit.
 
 Current notebook as-is tunes to lower bound of CV confidence interval and should produce a LB score of around 79 (varies somewhat), not better than scikit-learn ensembling approach but it was a worthwhile exercise to learn the basics of neural nets.
+
+# kaggle_titanic_meetup_overview.ipynb and kaggle_titanic_meetup_submission.ipynb
+
+kaggle_titanic_meetup_overview is a high level overview of scikit-learn for the Salt Lake City Python meetup.  kaggle_titanic_meetup_submission.ipynb is a spruced up version of kaggle_titanic.ipynb for same meetup.
+
